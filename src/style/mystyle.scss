@@ -1,0 +1,11 @@
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/functions";
+
+$primary: #f69f98;
+$danger:  #FF0000;
+$warning: #f5d6b8;
+$success: #acb5a0;
+$info: #8ab6c6;
+$red: #FF0000;
+
+@import "../../node_modules/bulma/bulma";
