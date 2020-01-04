@@ -15,7 +15,12 @@ $red: #FF0000;
 }
 
 .hero.landing {
-  background: url(https://images.unsplash.com/photo-1503942142281-94af0aded523?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80) no-repeat center center fixed;
+  background: linear-gradient(
+  rgba(0, 0, 0, 0),
+  rgba(0, 0, 0, 0.3),
+
+  rgba(0, 0, 0, 1)
+    ),url(https://images.unsplash.com/photo-1503942142281-94af0aded523?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
