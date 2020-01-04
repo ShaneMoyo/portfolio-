@@ -2,16 +2,30 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './style/mystyle.css';
+import {  mdiHumanHandsup } from '@mdi/js'
+import Icon from '@mdi/react'
 
 function App() {
+
+
   return (
-    <section class="hero is-info is-fullheight">
+    <div>
+      <head>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.com/libraries/kissui.scrollanim"/>
+        <link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet" type="text/css" />
+        <title>Shane Moyo</title>
+      </head>
+    <section class="hero is-info is-fullheight landing">
       <div class="hero-head">
         <nav class="navbar">
           <div class="container">
+
             <div class="navbar-brand">
               <a class="navbar-item" href="../">
-                <img src="http://bulma.io/images/bulma-type-white.png" alt="Logo"/>
+                <p class="title large">S. Moyo</p>
               </a>
               <span class="navbar-burger burger" data-target="navbarMenu">
                   <span></span>
@@ -23,8 +37,11 @@ function App() {
               <div class="navbar-end">
                 <span class="navbar-item">
                   <a class="button is-white is-outlined" href="#">
-                    <span class="icon">
-                      <i class="fa fa-home"></i>
+                  <span class="icon is-large is-pulled-left" >
+                    <Icon path={mdiHumanHandsup}
+                    size={2}
+                    color="white"
+                    />
                     </span>
                     <span>Home</span>
                   </a>
@@ -32,7 +49,10 @@ function App() {
                   <span class="navbar-item">
                     <a class="button is-white is-outlined" href="#">
                       <span class="icon">
-                          <i class="fa fa-superpowers"></i>
+                        <Icon path={mdiHumanHandsup}
+                          size={2}
+                          color="white"
+                        />
                       </span>
                       <span>Examples</span>
                     </a>
@@ -40,7 +60,10 @@ function App() {
                   <span class="navbar-item">
                     <a class="button is-white is-outlined" href="#">
                       <span class="icon">
-                        <i class="fa fa-book"></i>
+                        <Icon path={mdiHumanHandsup}
+                          size={2}
+                          color="white"
+                        />
                       </span>
                       <span>Documentation</span>
                     </a>
@@ -59,30 +82,14 @@ function App() {
         </nav>
       </div>
       <div class="hero-body">
-          <div class="container has-text-centered">
-              <div class="column is-6 is-offset-3">
-                  <h1 class="title">
-                      Coming Soon
-                  </h1>
-                  <h2 class="subtitle">
-                      $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
-                  </h2>
-                  <div class="box">
-                      <div class="field is-grouped">
-                          <p class="control is-expanded">
-                              <input class="input" type="text" placeholder="Enter your email"/>
-                          </p>
-                          <p class="control">
-                              <a class="button is-info">
-                                  Notify Me
-                              </a>
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        <div class="animated fadeIn container has-text-centered">
+          <h1 class="subtitle">Hey there, I'm</h1>
+          <h2 class="title">Shane Moyo</h2>
+          <h1 class="subtitle profession">A Full Stack Software Engineer</h1>
         </div>
+      </div>
     </section>
+    </div>
   );
 }
 
