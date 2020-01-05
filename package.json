@@ -19,7 +19,9 @@
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "react": "^16.12.0",
+    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.12.0",
+    "react-reveal": "^1.2.2",
     "react-scripts": "3.3.0",
     "sugarss": "^2.0.0"
   },
