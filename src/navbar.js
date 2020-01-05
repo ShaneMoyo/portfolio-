@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {  mdiHumanHandsup } from '@mdi/js'
 import Icon from '@mdi/react'
 import Zoom from 'react-reveal/Zoom';
 
-export default function navbar(props) {
+function navbar(props) {
+
+
   return (
     <nav class={props.sticky ? "navbar is-fixed-top animated fadeIn" : "navbar is-fixed-top animated fadeOut" }>
       <div class="container">
@@ -12,7 +14,7 @@ export default function navbar(props) {
           <a class="navbar-item" href="../">
             <p class="title has-text-white large">S. Moyo</p>
           </a>
-          <span class="navbar-burger burger" data-target="navbarMenu">
+          <span class="navbar-burger burger" data-target="navbarMenu" onClick={() => props.isActive(!props.active)}>
               <span></span>
               <span></span>
               <span></span>
@@ -68,3 +70,4 @@ export default function navbar(props) {
 
   );
 }
+export default navbar;

@@ -10,6 +10,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 function App() {
   const [stickyNav, setStickyNav] = useState(false);
+  const [activeNav, setActiveNav] = useState(false);
 
   return (
     <div>
@@ -23,7 +24,7 @@ function App() {
       </head>
     <section class="hero is-info is-fullheight landing">
       <div class="hero-head">
-        <Navbar sticky={stickyNav}/>
+        <Navbar sticky={stickyNav} isActive={setActiveNav} active={activeNav}/>
       </div>
       <div class="hero-body">
           <div class="container has-text-centered">
