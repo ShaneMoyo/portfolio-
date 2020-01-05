@@ -37,6 +37,7 @@ function App() {
               <h2 class="title">Shane Moyo</h2>
               <h1 class="subtitle profession">A Full Stack Software Engineer</h1>
             </ScrollAnimation>
+            <br/><br/><br/><br/><br/>
           </div>
       </div>
     </section>
