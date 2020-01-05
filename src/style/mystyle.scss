@@ -31,32 +31,13 @@ $red: #FF0000;
   rgba(0, 0, 0, 0.5),
   rgba(0, 0, 0, 0.7),
   rgba(0, 0, 0, 1)
-    ),url(../img/waves.jpg) no-repeat center center fixed;
+    ),url(../img/waves.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-@media screen and (max-device-width: 1024px) {
-  .hero.landing {
-    background: linear-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0.7),
-
-
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 1)
-      ),url(../img/waves.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-}
 
 .hero.main {
   background-color: #000;
