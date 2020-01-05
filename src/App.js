@@ -46,9 +46,8 @@ function App() {
 
         <div class=" container has-text-centered">
         <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-          <h1 class="subtitle">Hey there, I'm</h1>
-          <h2 class="title">Shane Moyo</h2>
-          <h1 class="subtitle profession">A Full Stack Software Engineer</h1>
+          <h1 class="subtitle">Hello</h1>
+          <h1 class="subtitle profession">This page is under construction</h1>
           </ScrollAnimation>
         </div>
 

@@ -8,7 +8,7 @@
   animation-duration: 0.3s !important; }
 
 .hero.landing {
-  background: linear-gradient(white, rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), black), url(https://images.unsplash.com/photo-1542402716-362b0f241c9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80) no-repeat center center fixed;
+  background: linear-gradient(white, rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), black), url(../img/waves.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
