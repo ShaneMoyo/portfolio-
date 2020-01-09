@@ -30,7 +30,7 @@ function navbar(props) {
                 color="white"
                 />
                 </span>
-                <span>Home</span>
+                <span>Experience</span>
               </a>
             </span>
               <span class="navbar-item">
@@ -41,7 +41,7 @@ function navbar(props) {
                       color="white"
                     />
                   </span>
-                  <span>Examples</span>
+                  <span>Projects</span>
                 </a>
               </span>
               <span class="navbar-item">
@@ -52,7 +52,7 @@ function navbar(props) {
                       color="white"
                     />
                   </span>
-                  <span>Documentation</span>
+                  <span>Education</span>
                 </a>
               </span>
               <span class="navbar-item">
@@ -60,7 +60,7 @@ function navbar(props) {
                   <span class="icon">
                     <i class="fa fa-github"></i>
                   </span>
-                  <span>View Source</span>
+                  <span>About Me</span>
                 </a>
               </span>
             </div>

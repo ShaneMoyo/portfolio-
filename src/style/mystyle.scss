@@ -44,4 +44,17 @@ $red: #FF0000;
   -o-background-size: cover;
   background-size: cover;
 }
+
+.box.black{
+  background-color: #000;
+  border: 2px solid #fff;
+}
+
+.title {
+  color: #fff !important;
+}
+
+.subtitle {
+  color: #fff !important;
+}
 @import "../../node_modules/bulma/bulma";
