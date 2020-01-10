@@ -59,13 +59,14 @@ function App() {
       <div class="hero-body has-text-centered">
       <div class="container has-text-centered">
         <div class="columns ">
-          <div class="column">
-            <div class="container">
+          <div class="column" >
+            <div class="container" id="projects">
               <ScrollAnimation
                 animateIn="fadeIn"
                 animateOut="fadeOut"
                 duration={1}>
-                <div class="box black is-outlined has-text-white">
+                <br/><br/><br/>
+                <div class="box black is-outlined has-text-white" >
                   <h1 class="title">Projects</h1>
                   <h1 class="subtitle profession">This page is under construction</h1>
                   <h1 class="subtitle profession">
@@ -90,12 +91,13 @@ function App() {
           </div>
 
           <div class="column">
-            <div class="container">
+            <div class="container" id="education">
               <ScrollAnimation
                 animateIn="fadeIn"
                 animateOut="fadeOut"
                 duration={1}>
-                <div class="box black is-outlined has-text-white">
+                <br/><br/><br/>
+                <div class="box black is-outlined has-text-white" >
                   <h1 class="title">Education</h1>
                   <h1 class="subtitle profession">This page is under construction</h1>
                   <h1 class="subtitle profession">
@@ -121,13 +123,14 @@ function App() {
 
 
           <div class="column">
-            <div class="container">
+            <div class="container" id="experience">
               <ScrollAnimation
                 animateIn="fadeIn"
                 animateOut="fadeOut"
 
                 duration={1}>
-                <div class="box black is-outlined has-text-white">
+                <br/><br/><br/>
+                <div class="box black is-outlined has-text-white" >
                   <h1 class="title">Experience</h1>
                   <h1 class="subtitle profession">This page is under construction</h1>
                   <h1 class="subtitle profession">
@@ -152,13 +155,14 @@ function App() {
           </div>
 
           <div class="column">
-            <div class="container">
+            <div class="container" id="about">
               <ScrollAnimation
                 animateIn="fadeIn"
                 animateOut="fadeOut"
 
                 duration={2}>
-                <div class="box black is-outlined has-text-white">
+                <br/><br/><br/>
+                <div class="box black is-outlined has-text-white" >
                   <h1 class="title">About Me</h1>
                   <h1 class="subtitle profession">This page is under construction</h1>
                   <h1 class="subtitle profession">

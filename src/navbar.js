@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {  mdiHumanHandsup } from '@mdi/js'
+import {  mdiHumanHandsup, mdiAccountBadgeHorizontalOutline, mdiLightbulbOnOutline, mdiSchool } from '@mdi/js'
 import Icon from '@mdi/react'
 import Zoom from 'react-reveal/Zoom';
 
@@ -24,9 +24,9 @@ function navbar(props) {
         <div id="navbarMenu" class={props.active ? "navbar-menu is-active animated fadeIn" : "navbar-menu"}>
           <div class="navbar-end">
             <span class="navbar-item">
-              <a class="button is-white is-outlined" href="#">
+              <a class="button is-white is-outlined" href="#experience" onClick={() => props.isActive(!props.active)}>
               <span class="icon is-large is-pulled-left" >
-                <Icon path={mdiHumanHandsup}
+                <Icon path={mdiAccountBadgeHorizontalOutline}
                 size={2}
                 color="white"
                 />
@@ -35,9 +35,9 @@ function navbar(props) {
               </a>
             </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined" href="#">
+                <a class="button is-white is-outlined" href="#projects" onClick={() => props.isActive(!props.active)}>
                   <span class="icon">
-                    <Icon path={mdiHumanHandsup}
+                    <Icon path={mdiLightbulbOnOutline}
                       size={2}
                       color="white"
                     />
@@ -46,9 +46,9 @@ function navbar(props) {
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined" href="#">
+                <a class="button is-white is-outlined" href="#education" onClick={() => props.isActive(!props.active)}>
                   <span class="icon">
-                    <Icon path={mdiHumanHandsup}
+                    <Icon path={mdiSchool}
                       size={2}
                       color="white"
                     />
@@ -57,9 +57,12 @@ function navbar(props) {
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined" href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/landing.html">
+                <a class="button is-white is-outlined" href="#education" onClick={() => props.isActive(!props.active)}>
                   <span class="icon">
-                    <i class="fa fa-github"></i>
+                    <Icon path={mdiHumanHandsup}
+                      size={2}
+                      color="white"
+                    />
                   </span>
                   <span>About Me</span>
                 </a>

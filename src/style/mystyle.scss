@@ -7,7 +7,9 @@ $warning: #f5d6b8;
 $success: #acb5a0;
 $info: #8ab6c6;
 $red: #FF0000;
-
+html {
+  scroll-behavior: smooth;
+}
 .navbar-burger {
   span {
     color: #FFF;
@@ -58,7 +60,7 @@ $red: #FF0000;
   color: #fff !important;
 }
 .navbar-menu{
-  background-color: rgba(0, 0, 0, 0.1) !important; 
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 .navbar {
   position: -webkit-sticky !important;
