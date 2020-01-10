@@ -45,9 +45,10 @@ function App() {
     </section>
 
     <section class="hero is-fullheight main">
-      <br/>
-      <br/>
-      <br/>
+    <ScrollAnimation
+      animateOut="fadeOut"
+      animateIn="fadeIn">
+    
 
 
           <Navbar
@@ -55,7 +56,7 @@ function App() {
             background={stickyNavBackground}
             isActive={setActiveNav}
             active={activeNav}/>
-        
+
       <ScrollAnimation
         animateIn="fadeIn"
         duration={1}>
@@ -188,6 +189,7 @@ function App() {
       </div>
       </div>
       </div>
+      </ScrollAnimation>
       </ScrollAnimation>
     </section>
 
