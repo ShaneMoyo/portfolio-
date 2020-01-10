@@ -31,6 +31,10 @@
 .subtitle {
   color: #fff !important; }
 
+.navbackground {
+  background: rgba(0, 0, 0, 0.7) !important;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.7) !important; }
+
 /*! bulma.io v0.8.0 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {

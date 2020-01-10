@@ -10,6 +10,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 function App() {
   const [stickyNav, setStickyNav] = useState(false);
+  const [stickyNavBackground, setStickyNavBackground] = useState(false);
   const [activeNav, setActiveNav] = useState(false);
 
   return (
@@ -24,16 +25,20 @@ function App() {
       </head>
     <section class="hero is-info is-fullheight landing">
       <div class="hero-head">
-        <Navbar sticky={stickyNav} isActive={setActiveNav} active={activeNav}/>
+        <Navbar
+          sticky={stickyNav}
+          background={stickyNavBackground}
+          isActive={setActiveNav}
+          active={activeNav}/>
       </div>
       <div class="hero-body">
           <div class="container has-text-centered">
             <ScrollAnimation
               animateIn="fadeIn"
               animateOut="fadeOut"
-              duration={2}
+              afterAnimatedIn={() => setStickyNav(false)}
               afterAnimatedOut={() => setStickyNav(true)}
-              afterAnimatedIn={() => setStickyNav(false)}>
+              duration={1}>
               <h1 class="subtitle">Hey there, I'm</h1>
               <h2 class="title">Shane Moyo</h2>
               <h1 class="subtitle profession">A Full Stack Software Engineer</h1>
@@ -44,12 +49,24 @@ function App() {
     </section>
 
     <section class="hero is-fullheight main">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <ScrollAnimation
+        animateIn="fadeIn"
+        duration={1}>
       <div class="hero-body has-text-centered">
       <div class="container has-text-centered">
         <div class="columns ">
           <div class="column">
             <div class="container">
-              <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={2}>
+              <ScrollAnimation
+                animateIn="fadeIn"
+                animateOut="fadeOut"
+                duration={1}>
                 <div class="box black is-outlined has-text-white">
                   <h1 class="title">Projects</h1>
                   <h1 class="subtitle profession">This page is under construction</h1>
@@ -76,7 +93,10 @@ function App() {
 
           <div class="column">
             <div class="container">
-              <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={2}>
+              <ScrollAnimation
+                animateIn="fadeIn"
+                animateOut="fadeOut"
+                duration={1}>
                 <div class="box black is-outlined has-text-white">
                   <h1 class="title">Education</h1>
                   <h1 class="subtitle profession">This page is under construction</h1>
@@ -104,7 +124,11 @@ function App() {
 
           <div class="column">
             <div class="container">
-              <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={2}>
+              <ScrollAnimation
+                animateIn="fadeIn"
+                animateOut="fadeOut"
+
+                duration={1}>
                 <div class="box black is-outlined has-text-white">
                   <h1 class="title">Experience</h1>
                   <h1 class="subtitle profession">This page is under construction</h1>
@@ -131,7 +155,11 @@ function App() {
 
           <div class="column">
             <div class="container">
-              <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration={2}>
+              <ScrollAnimation
+                animateIn="fadeIn"
+                animateOut="fadeOut"
+
+                duration={2}>
                 <div class="box black is-outlined has-text-white">
                   <h1 class="title">About Me</h1>
                   <h1 class="subtitle profession">This page is under construction</h1>
@@ -159,6 +187,7 @@ function App() {
       </div>
       </div>
       </div>
+      </ScrollAnimation>
     </section>
 
     </div>
