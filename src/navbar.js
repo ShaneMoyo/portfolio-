@@ -5,8 +5,8 @@ import Zoom from 'react-reveal/Zoom';
 
 function navbar(props) {
 
-  let navClass = props.sticky ? "navbar is-fixed-top animated fadeIn" : "navbar is-fixed-top animated fadeOut";
-  navClass = props.background ? navClass + " navbackground" : navClass;
+  let navClass = "navbar animated fadeIn";
+
   return (
     <nav class={navClass}>
       <div class="container">

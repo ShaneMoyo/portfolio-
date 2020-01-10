@@ -31,7 +31,10 @@
 .subtitle {
   color: #fff !important; }
 
-.navbackground {
+.navbar {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
   background: rgba(0, 0, 0, 0.7) !important;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.7) !important; }
 

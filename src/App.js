@@ -25,11 +25,7 @@ function App() {
       </head>
     <section class="hero is-info is-fullheight landing">
       <div class="hero-head">
-        <Navbar
-          sticky={stickyNav}
-          background={stickyNavBackground}
-          isActive={setActiveNav}
-          active={activeNav}/>
+
       </div>
       <div class="hero-body">
           <div class="container has-text-centered">
@@ -52,9 +48,14 @@ function App() {
       <br/>
       <br/>
       <br/>
-      <br/>
-      <br/>
-      <br/>
+
+
+          <Navbar
+            sticky={stickyNav}
+            background={stickyNavBackground}
+            isActive={setActiveNav}
+            active={activeNav}/>
+        
       <ScrollAnimation
         animateIn="fadeIn"
         duration={1}>
