@@ -62,7 +62,8 @@ $red: #FF0000;
   position: -webkit-sticky !important;
   position: sticky !important;
   top: 0;
-  background: rgba(0, 0, 0, 0.7) !important;
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.7) !important;
+  background: linear-gradient(black, black, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)) !important;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4) !important;
+
 }
 @import "../../node_modules/bulma/bulma";

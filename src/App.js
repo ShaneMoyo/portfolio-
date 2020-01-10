@@ -48,15 +48,11 @@ function App() {
     <ScrollAnimation
       animateOut="fadeOut"
       animateIn="fadeIn">
-    
-
-
-          <Navbar
-            sticky={stickyNav}
-            background={stickyNavBackground}
-            isActive={setActiveNav}
-            active={activeNav}/>
-
+      <Navbar
+        sticky={stickyNav}
+        background={stickyNavBackground}
+        isActive={setActiveNav}
+        active={activeNav}/>
       <ScrollAnimation
         animateIn="fadeIn"
         duration={1}>
