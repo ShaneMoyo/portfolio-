@@ -57,7 +57,9 @@ $red: #FF0000;
 .subtitle {
   color: #fff !important;
 }
-
+.navbar-menu{
+  background-color: rgba(0, 0, 0, 0.1) !important; 
+}
 .navbar {
   position: -webkit-sticky !important;
   position: sticky !important;
