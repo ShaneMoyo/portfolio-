@@ -57,7 +57,7 @@ function navbar(props) {
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined" href="#education" onClick={() => props.isActive(!props.active)}>
+                <a class="button is-white is-outlined" href="#about" onClick={() => props.isActive(!props.active)}>
                   <span class="icon">
                     <Icon path={mdiHumanHandsup}
                       size={2}

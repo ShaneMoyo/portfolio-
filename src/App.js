@@ -55,6 +55,7 @@ function App() {
         active={activeNav}/>
       <ScrollAnimation
         animateIn="fadeIn"
+        animateOnce={true}
         duration={1}>
       <div class="hero-body has-text-centered">
       <div class="container has-text-centered">
@@ -95,6 +96,7 @@ function App() {
               <ScrollAnimation
                 animateIn="fadeIn"
                 animateOut="fadeOut"
+                animateOnce={true}
                 duration={1}>
                 <br/><br/><br/>
                 <div class="box black is-outlined has-text-white" >
@@ -127,7 +129,7 @@ function App() {
               <ScrollAnimation
                 animateIn="fadeIn"
                 animateOut="fadeOut"
-
+                animateOnce={true}
                 duration={1}>
                 <br/><br/><br/>
                 <div class="box black is-outlined has-text-white" >
@@ -159,7 +161,7 @@ function App() {
               <ScrollAnimation
                 animateIn="fadeIn"
                 animateOut="fadeOut"
-
+                animateOnce={true}
                 duration={2}>
                 <br/><br/><br/>
                 <div class="box black is-outlined has-text-white" >
