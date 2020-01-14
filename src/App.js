@@ -14,6 +14,7 @@ function App() {
   const [stickyNav, setStickyNav] = useState(false);
   const [stickyNavBackground, setStickyNavBackground] = useState(false);
   const [activeNav, setActiveNav] = useState(false);
+  const [openProjects, setOpenProjects] = useState(false);
 
   return (
     <div>
@@ -88,7 +89,7 @@ function App() {
                     <span>Github</span>
                   </a>
 
-                  <a class="button is-white is-outlined" href="https://github.com/ShaneMoyo">
+                  <a class="button is-white is-outlined" onClick={() => setOpenProjects(!openProjects)}>
                     <span class="icon">
                       <Icon path={mdiRocket}
                       size={2}
@@ -98,7 +99,32 @@ function App() {
                     <span>Deployed Projects</span>
                   </a>
                   </div>
+
+                  {openProjects &&
+                    <div>
+                      <a class="button is-white is-outlined" href="https://healthihost-qa.herokuapp.com/">
+                        <span class="icon">
+                          <Icon path={mdiRocket}
+                          size={2}
+                          color="white"
+                          />
+                        </span>
+                        <span>Fullstack Todo App</span>
+                      </a>
+
+                      <a class="button is-white is-outlined" href="https://shanestodolist.herokuapp.com/">
+                        <span class="icon">
+                          <Icon path={mdiRocket}
+                          size={2}
+                          color="white"
+                          />
+                        </span>
+                        <span>HealthiHost</span>
+                      </a>
+                  </div> }
                 </div>
+
+
               </ScrollAnimation>
             </div>
 
