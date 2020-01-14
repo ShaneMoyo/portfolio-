@@ -71,6 +71,12 @@ function App() {
                 <br/><br/><br/>
                 <div class="box black is-outlined has-text-white" >
                   <h1 class="title">Projects</h1>
+                  <h1 class="subtitle">
+                    Here you can take a look at some of my personal work.
+                    Most of the applications I make are created with
+                    MongoDB, React, Express and Node.
+                  </h1>
+                  <div class="buttons is-centered">
                   <a class="button is-white is-outlined" href="https://github.com/ShaneMoyo">
                     <span class="icon">
                       <Icon path={mdiGithubCircle}
@@ -81,7 +87,7 @@ function App() {
                     <br/>
                     <span>Github</span>
                   </a>
-                  <h1 class="title">Projects</h1>
+
                   <a class="button is-white is-outlined" href="https://github.com/ShaneMoyo">
                     <span class="icon">
                       <Icon path={mdiRocket}
@@ -91,6 +97,7 @@ function App() {
                     </span>
                     <span>Deployed Projects</span>
                   </a>
+                  </div>
                 </div>
               </ScrollAnimation>
             </div>
@@ -161,7 +168,7 @@ function App() {
             </div>
 
 
-          
+
             <div class="container" id="about">
               <ScrollAnimation
                 animateIn="fadeIn"
