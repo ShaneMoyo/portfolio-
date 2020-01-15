@@ -8,14 +8,38 @@ import Reveal from 'react-reveal/Reveal';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {  mdiGithubCircle, mdiRocket } from '@mdi/js'
 import Icon from '@mdi/react'
-import Welcome from './components/welcome';
-
+import Welcome from './components/Welcome';
+import Section from './components/Section';
+import translations from './locales/translations';
 
 function App() {
   const [stickyNav, setStickyNav] = useState(false);
   const [stickyNavBackground, setStickyNavBackground] = useState(false);
   const [activeNav, setActiveNav] = useState(false);
   const [openProjects, setOpenProjects] = useState(false);
+  const projectsOutlet = (
+    <div class="buttons is-centered">
+      <a class="button is-white is-outlined" href="https://github.com/ShaneMoyo">
+        <span class="icon">
+          <Icon path={mdiGithubCircle}
+          size={2}
+          color="white"
+          />
+        </span>
+        <br/>
+        <span>Github</span>
+      </a>
+
+      <a class="button is-white is-outlined" onClick={() => setOpenProjects(!openProjects)}>
+        <span class="icon">
+          <Icon path={mdiRocket}
+          size={2}
+          color="white"
+          />
+        </span>
+        <span>Deployed Projects</span>
+      </a>
+    </div>);
 
   return (
     <div>
@@ -27,205 +51,38 @@ function App() {
         <link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet" type="text/css" />
         <title>Shane Moyo</title>
       </head>
-    <section class="hero is-info is-fullheight landing">
-      <div class="hero-head">
-
-      </div>
-      <div class="hero-body">
-          <div class="container has-text-centered">
-            <Welcome setStickyNav={setStickyNav}/>
-            <br/><br/><br/><br/><br/>
-          </div>
-      </div>
-    </section>
+      <section class="hero is-info is-fullheight landing">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+              <Welcome setStickyNav={setStickyNav}/>
+              <br/><br/><br/><br/><br/>
+            </div>
+        </div>
+      </section>
 
     <section class="hero is-fullheight main">
-    <ScrollAnimation
-      animateOut="fadeOut"
-      animateIn="fadeIn">
-      <Navbar
-        sticky={stickyNav}
-        background={stickyNavBackground}
-        isActive={setActiveNav}
-        active={activeNav}/>
       <ScrollAnimation
-        animateIn="fadeIn"
-        animateOnce={true}
-        duration={1}>
-      <div class="hero-body has-text-centered">
-      <div class="container has-text-centered">
-        <div class="columns ">
-          <div class="column" >
-            <div class="container" id="projects">
-              <ScrollAnimation
-                animateIn="fadeIn"
-                animateOut="fadeOut"
-                duration={1}>
-                <br/><br/><br/>
-                <div class="box black is-outlined has-text-white" >
-                  <h1 class="title">Projects</h1>
-                  <h1 class="subtitle">
-                    Here you can take a look at some of my personal work.
-                    Most of the applications I make are created with
-                    MongoDB, React, Express and Node.
-                  </h1>
-                  <div class="buttons is-centered">
-                  <a class="button is-white is-outlined" href="https://github.com/ShaneMoyo">
-                    <span class="icon">
-                      <Icon path={mdiGithubCircle}
-                      size={2}
-                      color="white"
-                      />
-                    </span>
-                    <br/>
-                    <span>Github</span>
-                  </a>
-
-                  <a class="button is-white is-outlined" onClick={() => setOpenProjects(!openProjects)}>
-                    <span class="icon">
-                      <Icon path={mdiRocket}
-                      size={2}
-                      color="white"
-                      />
-                    </span>
-                    <span>Deployed Projects</span>
-                  </a>
-                  </div>
-
-                  {openProjects &&
-                    <div>
-                      <a class="button is-white is-outlined" href="https://healthihost-qa.herokuapp.com/">
-                        <span class="icon">
-                          <Icon path={mdiRocket}
-                          size={2}
-                          color="white"
-                          />
-                        </span>
-                        <span>Fullstack Todo App</span>
-                      </a>
-
-                      <a class="button is-white is-outlined" href="https://shanestodolist.herokuapp.com/">
-                        <span class="icon">
-                          <Icon path={mdiRocket}
-                          size={2}
-                          color="white"
-                          />
-                        </span>
-                        <span>HealthiHost</span>
-                      </a>
-                  </div> }
-                </div>
-
-
-              </ScrollAnimation>
-            </div>
-
-
-
-            <div class="container" id="education">
-              <ScrollAnimation
-                animateIn="fadeIn"
-                animateOut="fadeOut"
-                animateOnce={true}
-                duration={1}>
-                <br/><br/><br/>
-                <div class="box black is-outlined has-text-white" >
-                  <h1 class="title">Education</h1>
-                  <h1 class="subtitle profession">This page is under construction</h1>
-                  <h1 class="subtitle profession">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque laudantium, totam rem aperiam,
-                    eaque ipsa quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem
-                    sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                    consectetur, adipisci velit, sed quia non numquam eius modi tempora
-                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-                    nisi ut aliquid ex ea commodi consequatur?
-                    Quis autem vel eum iure reprehenderit qui in ea voluptate
-                    velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                    voluptas nulla pariatur?
-                  </h1>
-                </div>
-              </ScrollAnimation>
-            </div>
-
-
-
-
-            <div class="container" id="experience">
-              <ScrollAnimation
-                animateIn="fadeIn"
-                animateOut="fadeOut"
-                animateOnce={true}
-                duration={1}>
-                <br/><br/><br/>
-                <div class="box black is-outlined has-text-white" >
-                  <h1 class="title">Experience</h1>
-                  <h1 class="subtitle profession">This page is under construction</h1>
-                  <h1 class="subtitle profession">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque laudantium, totam rem aperiam,
-                    eaque ipsa quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem
-                    sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                    consectetur, adipisci velit, sed quia non numquam eius modi tempora
-                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-                    nisi ut aliquid ex ea commodi consequatur?
-                    Quis autem vel eum iure reprehenderit qui in ea voluptate
-                    velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                    voluptas nulla pariatur?
-                  </h1>
-                </div>
-              </ScrollAnimation>
-            </div>
-
-
-
-            <div class="container" id="about">
-              <ScrollAnimation
-                animateIn="fadeIn"
-                animateOut="fadeOut"
-                animateOnce={true}
-                duration={2}>
-                <br/><br/><br/>
-                <div class="box black is-outlined has-text-white" >
-                  <h1 class="title">About Me</h1>
-                  <h1 class="subtitle profession">This page is under construction</h1>
-                  <h1 class="subtitle profession">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque laudantium, totam rem aperiam,
-                    eaque ipsa quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem
-                    sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                    consectetur, adipisci velit, sed quia non numquam eius modi tempora
-                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-                    nisi ut aliquid ex ea commodi consequatur?
-                    Quis autem vel eum iure reprehenderit qui in ea voluptate
-                    velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                    voluptas nulla pariatur?
-                  </h1>
-                </div>
-              </ScrollAnimation>
+        animateOut="fadeOut"
+        animateIn="fadeIn">
+        <Navbar/>
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <div class="columns">
+              <div class="column" >
+                <Section
+                  copy={translations["projects"]}
+                  outlet={projectsOutlet}
+                  />
+                <Section copy={translations["education"]}/>
+                <Section copy={translations["experience"]}/>
+                <Section copy={translations["about"]}/>
+              </div>
             </div>
           </div>
-
-      </div>
-      </div>
-      </div>
-      </ScrollAnimation>
+        </div>
       </ScrollAnimation>
     </section>
-
-    </div>
+  </div>
   );
 }
 
