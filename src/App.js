@@ -8,6 +8,7 @@ import Reveal from 'react-reveal/Reveal';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {  mdiGithubCircle, mdiRocket } from '@mdi/js'
 import Icon from '@mdi/react'
+import Welcome from './components/welcome';
 
 
 function App() {
@@ -32,16 +33,7 @@ function App() {
       </div>
       <div class="hero-body">
           <div class="container has-text-centered">
-            <ScrollAnimation
-              animateIn="fadeIn"
-              animateOut="fadeOut"
-              afterAnimatedIn={() => setStickyNav(false)}
-              afterAnimatedOut={() => setStickyNav(true)}
-              duration={1}>
-              <h1 class="subtitle">Hey there, I'm</h1>
-              <h2 class="title">Shane Moyo</h2>
-              <h1 class="subtitle profession">A Full Stack Software Engineer</h1>
-            </ScrollAnimation>
+            <Welcome setStickyNav={setStickyNav}/>
             <br/><br/><br/><br/><br/>
           </div>
       </div>
