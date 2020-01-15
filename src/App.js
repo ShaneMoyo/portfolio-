@@ -1,45 +1,16 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 import './style/mystyle.css';
 import "animate.css/animate.min.css";
-import Navbar from './navbar'
-import Reveal from 'react-reveal/Reveal';
+
 import ScrollAnimation from 'react-animate-on-scroll';
 import {  mdiGithubCircle, mdiRocket } from '@mdi/js'
-import Icon from '@mdi/react'
-import Welcome from './components/Welcome';
+import Landing from './components/Landing';
 import Section from './components/Section';
-import translations from './locales/translations';
+import { experience, education, about } from './locales/translations';
+import Projects from './components/projects/Projects';
+import Main from './components/Main.js';
 
 function App() {
-  const [stickyNav, setStickyNav] = useState(false);
-  const [stickyNavBackground, setStickyNavBackground] = useState(false);
-  const [activeNav, setActiveNav] = useState(false);
-  const [openProjects, setOpenProjects] = useState(false);
-  const projectsOutlet = (
-    <div class="buttons is-centered">
-      <a class="button is-white is-outlined" href="https://github.com/ShaneMoyo">
-        <span class="icon">
-          <Icon path={mdiGithubCircle}
-          size={2}
-          color="white"
-          />
-        </span>
-        <br/>
-        <span>Github</span>
-      </a>
-
-      <a class="button is-white is-outlined" onClick={() => setOpenProjects(!openProjects)}>
-        <span class="icon">
-          <Icon path={mdiRocket}
-          size={2}
-          color="white"
-          />
-        </span>
-        <span>Deployed Projects</span>
-      </a>
-    </div>);
 
   return (
     <div>
@@ -51,37 +22,9 @@ function App() {
         <link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet" type="text/css" />
         <title>Shane Moyo</title>
       </head>
-      <section class="hero is-info is-fullheight landing">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-              <Welcome setStickyNav={setStickyNav}/>
-              <br/><br/><br/><br/><br/>
-            </div>
-        </div>
-      </section>
 
-    <section class="hero is-fullheight main">
-      <ScrollAnimation
-        animateOut="fadeOut"
-        animateIn="fadeIn">
-        <Navbar/>
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <div class="columns">
-              <div class="column" >
-                <Section
-                  copy={translations["projects"]}
-                  outlet={projectsOutlet}
-                  />
-                <Section copy={translations["education"]}/>
-                <Section copy={translations["experience"]}/>
-                <Section copy={translations["about"]}/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </ScrollAnimation>
-    </section>
+      <Landing/>
+      <Main/>
   </div>
   );
 }

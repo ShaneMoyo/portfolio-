@@ -1,5 +1,5 @@
-export default {
-  "education": {
+
+export const education = {
     "title": "Education",
     "body": `Sed ut perspiciatis unde omnis iste natus error sit voluptatem
     accusantium doloremque laudantium, totam rem aperiam,
@@ -15,14 +15,20 @@ export default {
     Quis autem vel eum iure reprehenderit qui in ea voluptate
     velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
     voluptas nulla pariatur?`,
-  },
-  "projects": {
+  }
+
+export const projects = {
     "title": "Projects",
     "body": `Here you can take a look at some of my personal work.
       Most of the applications I make are created with
       MongoDB, React, Express and Node.`,
-  },
-  "experience": {
+    "button": {
+      "github": "Github",
+      "deployed": "Deployed Projects"
+    }
+  }
+
+export const experience = {
     "title": "Experience",
     "body": `Sed ut perspiciatis unde omnis iste natus error sit voluptatem
     accusantium doloremque laudantium, totam rem aperiam,
@@ -38,8 +44,8 @@ export default {
     Quis autem vel eum iure reprehenderit qui in ea voluptate
     velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
     voluptas nulla pariatur?`,
-  },
-  "about": {
+  }
+export const about = {
     "title": "About Me",
     "body": `Sed ut perspiciatis unde omnis iste natus error sit voluptatem
     accusantium doloremque laudantium, totam rem aperiam,
@@ -55,5 +61,11 @@ export default {
     Quis autem vel eum iure reprehenderit qui in ea voluptate
     velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
     voluptas nulla pariatur?`,
-  },
-}
+  }
+
+  export const landing = {
+      "subtitle1": "Hey there, I'm",
+      "name": "Shane Moyo",
+      "subtitle2": "A Full Stack Software Engineer",
+
+    }
