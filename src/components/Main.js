@@ -2,7 +2,7 @@ import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Section from './Section';
 import Projects from './projects/Projects';
-import Navbar from './navbar'
+import Navbar from './navbar/navbar'
 import { experience, education, about } from '../locales/translations';
 
 export default function Main() {

@@ -1,34 +1,24 @@
 import React, { useState } from 'react';
 import {  mdiHumanHandsup, mdiAccountBadgeHorizontalOutline, mdiLightbulbOnOutline, mdiSchool } from '@mdi/js'
 import Icon from '@mdi/react'
-import Button from './utils/Button';
-import { experience, about, projects, education } from '../locales/translations';
+import Button from '../utils/Button';
+import Hamburger from './hamburger';
+import { experience, about, projects, education } from '../../locales/translations';
 function Navbar() {
 
-  let navClass = "navbar animated fadeIn";
   const [stickyNav, setStickyNav] = useState(false);
-
+  const toggleNav = () => setStickyNav(!stickyNav);
   return (
-    <nav class={navClass}>
+    <nav class="navbar animated fadeIn">
       <div class="container">
-
-        <div class="navbar-brand">
-          <a class="navbar-item" link="../">
-            <p class="title has-text-white large">S. Moyo</p>
-          </a>
-          <span class={stickyNav ? "navbar-burger  is-active burger" : "navbar-burger  burger"} data-target="navbarMenu" onClick={() => setStickyNav(!stickyNav)}>
-              <span></span>
-              <span></span>
-              <span></span>
-          </span>
-        </div>
+        <Hamburger handleClick={toggleNav} active={stickyNav}/>
         <div id="navbarMenu" class={stickyNav ? "navbar-menu is-active animated fadeIn" : "navbar-menu"}>
           <div class="navbar-end">
             <span class="navbar-item">
               <Button
                 link="#experience"
                 icon={mdiAccountBadgeHorizontalOutline}
-                onClick={() => setStickyNav(false)}
+                onClick={toggleNav}
                 text={experience.title}
               />
             </span>
@@ -36,7 +26,7 @@ function Navbar() {
                 <Button
                   link="#projects"
                   icon={mdiLightbulbOnOutline}
-                  onClick={() => setStickyNav(false)}
+                  onClick={toggleNav}
                   text={projects.title}
                 />
               </span>
@@ -44,7 +34,7 @@ function Navbar() {
                 <Button
                   link="#education"
                   icon={mdiSchool}
-                  onClick={() => setStickyNav(false)}
+                  onClick={toggleNav}
                   text={education.title}
                 />
               </span>
@@ -52,7 +42,7 @@ function Navbar() {
                 <Button
                   link="#about"
                   icon={mdiHumanHandsup}
-                  onClick={() => setStickyNav(false)}
+                  onClick={toggleNav}
                   text={about.title}
                 />
               </span>
