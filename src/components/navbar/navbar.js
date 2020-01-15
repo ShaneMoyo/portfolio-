@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import {  mdiHumanHandsup, mdiAccountBadgeHorizontalOutline, mdiLightbulbOnOutline, mdiSchool } from '@mdi/js'
-import Icon from '@mdi/react'
+import { experience, about, projects, education } from '../../locales/translations';
 import Button from '../utils/Button';
 import Hamburger from './hamburger';
-import { experience, about, projects, education } from '../../locales/translations';
 function Navbar() {
 
   const [stickyNav, setStickyNav] = useState(false);

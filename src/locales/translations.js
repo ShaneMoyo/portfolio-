@@ -25,6 +25,14 @@ export const projects = {
     "button": {
       "github": "Github",
       "deployed": "Deployed Projects"
+    },
+    "todo": {
+      "title": "Todo App",
+      "subtitle": "Full Stack Todo App created with mongDB, React and Express"
+    },
+    "healthihost": {
+      "title": "HealthiHost",
+      "subtitle": "Full Stack appointment booking App created with mongDB, React and Express"
     }
   }
 
