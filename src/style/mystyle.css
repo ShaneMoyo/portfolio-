@@ -11,7 +11,7 @@ html {
   animation-duration: 0.3s !important; }
 
 .hero.landing {
-  background: linear-gradient(white, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3), black), url(../img/waves.jpg) no-repeat center center;
+  background: linear-gradient( rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1), black), url(../img/sunset.jpeg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
