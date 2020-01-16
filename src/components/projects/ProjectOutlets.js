@@ -9,19 +9,21 @@ export default function ProjectOutlet() {
   const { button: {github, deployed}, todo, healthihost } = projects;
 
   return (
-    <div class="buttons is-centered">
-      <Button
-        icon={mdiGithubCircle}
-        link="https://github.com/ShaneMoyo"
-        text={github}
-      />
-      <Button
-        icon={mdiRocket}
-        onClick={() => setOpenProjects(!openProjects)}
-        text={deployed}
-      />
-
+    <div>
+      <div class="buttons is-centered">
+        <Button
+          icon={mdiGithubCircle}
+          link="https://github.com/ShaneMoyo"
+          text={github}
+        />
+        <Button
+          icon={mdiRocket}
+          onClick={() => setOpenProjects(!openProjects)}
+          text={deployed}
+        />
+      </div>
       {openProjects && <ProjectItem link="https://shanestodolist.herokuapp.com/" copy={todo}/>}
       {openProjects && <ProjectItem link="https://healthihost-qa.herokuapp.com/" copy={healthihost}/>}
-    </div>);
+    </div>
+  );
 }
