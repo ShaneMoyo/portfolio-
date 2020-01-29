@@ -17,9 +17,9 @@ export default function Main() {
             <div class="columns">
               <div class="column" >
                 <Projects/>
-                <Section title={education.title} body={education.body}/>
-                <Section title={experience.title} body={experience.body.crowdcompass.title} bullets={experience.body.crowdcompass.body}/>
                 <Section title={about.title} body={about.body}/>
+                <Section title={experience.title} body={experience.body.crowdcompass.title} bullets={experience.body.crowdcompass.body}/>
+                <Section title={education.title} body={education.body}/>
               </div>
             </div>
           </div>
