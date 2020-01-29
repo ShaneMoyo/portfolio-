@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 function section(props) {
   const {outlet, title, body, bullets, body3 } = props
   console.log('props: ', props)
-  const listItems = bullets ? bullets.map(bullet => <li >{bullet}</li>) : null;
+  const listItems = bullets ? bullets.map(bullet => <li class="animated fadeIn">{bullet}</li>) : null;
   return (
     <div class="container" id={title.toLowerCase()}>
       <ScrollAnimation

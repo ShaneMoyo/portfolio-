@@ -19,7 +19,7 @@ export default function Main() {
                 <Projects/>
                 <Section title={about.title} body={about.body}/>
                 <Section title={experience.title} body={experience.body.crowdcompass.title} bullets={experience.body.crowdcompass.body}/>
-                <Section title={education.title} body={education.body}/>
+                <Section title={education.title} body={education.body.title} bullets={education.body.body}/>
               </div>
             </div>
           </div>
