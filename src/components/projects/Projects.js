@@ -14,7 +14,7 @@ export default function Projects() {
           Full Stack Todo
         </p>
         <p class="subtitle is-small">
-          MongoDB Express React Redux Node
+          MongoDB Express React Redux Node.js
         </p>
         <div class="buttons">
         <Button text="View Website" link={'https://shanestodolist.herokuapp.com/'} icon={mdiWeb}/>
@@ -29,12 +29,12 @@ export default function Projects() {
           Healthihost
         </p>
         <p class="subtitle is-small">
-          MongoDB Express React Redux Node
+          MongoDB Express React Redux Node.js
         </p>
         <div class="buttons">
-          <Button text="View website" link={'https://healthihost-qa.herokuapp.com/'} icon={mdiWeb}/>
-          <Button text="View website" link={'https://github.com/ShaneMoyo/health-i-host'} icon={mdiWeb}/>
-          </div>
+          <Button text="View Website" link={'https://healthihost-qa.herokuapp.com/'} icon={mdiWeb}/>
+          <Button text="View Source" link={'https://github.com/ShaneMoyo/health-i-host'} icon={mdiGithubCircle}/>
+        </div>
       </div>
     </div>
     </div>

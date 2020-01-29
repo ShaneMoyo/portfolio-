@@ -43,6 +43,9 @@ body {
 .title {
   color: #fff !important; }
 
+.title.big {
+  font-size: 3rem !important; }
+
 .subtitle {
   color: #fff !important; }
 
