@@ -2,8 +2,7 @@ import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 function section(props) {
-  const {outlet, title, body, bullets, body3 } = props
-  console.log('props: ', props)
+  const { outlet, title, body, bullets, body3 } = props
   const listItems = bullets ? bullets.map(bullet => <li class="animated fadeIn">{bullet}</li>) : null;
   return (
     <div class="container" id={title.toLowerCase()}>
@@ -16,9 +15,7 @@ function section(props) {
           <h1 class="title big is-large">{title}</h1>
           <h1 class="subtitle">{body}</h1>
           <div class="content is-medium">
-            <ul>
-              {listItems}
-            </ul>
+            <ul>{listItems}</ul>
           </div>
           <h1 class="subtitle">{body3}</h1>
           {outlet}
