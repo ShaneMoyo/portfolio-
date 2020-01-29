@@ -22,9 +22,14 @@ function App() {
         <link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet" type="text/css" />
         <title>Shane Moyo</title>
       </head>
-
       <Landing/>
       <Main/>
+      <footer class="footer">
+        <div class="content has-text-centered">
+        <br/><br/><br/><br/><br/><br/>
+        </div>
+      </footer>
+
   </div>
   );
 }

@@ -7,13 +7,31 @@ $warning: #f5d6b8;
 $success: #acb5a0;
 $info: #8ab6c6;
 $red: #FF0000;
+.card{
+  background-color: black !important;
+  color: white !important;
+}
 html {
   scroll-behavior: smooth;
+  background: linear-gradient(
+  rgba(255, 255, 255, 1),
+  rgba(0, 0, 0, 1)
+    );
+    background-color: transparent !important;
+}
+body {
+  background: linear-gradient(
+  rgba(255, 255, 255, 1),
+  rgba(0, 0, 0, 1)
+    ) !important;
 }
 .navbar-burger {
   span {
     color: #FFF;
   }
+}
+.footer{
+  background-color: black !important;
 }
 .fadeOut {
     -webkit-animation-name: slideOutLeft;
@@ -27,11 +45,9 @@ html {
   rgba(255, 255, 255, 1),
   rgba(255, 255, 255, 0.3),
 
-
-
   rgba(0, 0, 0, 0.3),
   rgba(0, 0, 0, 1)
-    ),url(../img/space.jpeg) no-repeat center center;
+    ),url(../img/sunset.jpeg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

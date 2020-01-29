@@ -33,7 +33,7 @@ export const experience = {
     "title": "Experience",
     "body": {
       "crowdcompass": {
-        "title": `Software Engineer @ CrowdCompass - Cvent`,
+        "title": `Software Engineer - CrowdCompass by Cvent`,
         "body": [
           'Write modern, performant, maintainable code for a diverse array of client and internal projects',
           'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, React, Ember, Ruby, Express, and Node',

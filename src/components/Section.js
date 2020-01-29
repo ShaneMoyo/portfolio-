@@ -13,7 +13,7 @@ function section(props) {
         duration={1}>
         <br/><br/><br/>
         <div class="box black is-outlined has-text-white" >
-          <h1 class="title">{title}</h1>
+          <h1 class="title is-large">{title}</h1>
           <h1 class="subtitle">{body}</h1>
           <div class="content is-medium">
             <ul>
