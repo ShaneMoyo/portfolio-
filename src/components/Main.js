@@ -13,13 +13,13 @@ export default function Main() {
         animateIn="fadeIn">
         <Navbar/>
         <div class="hero-body">
-          <div class="container has-text-centered">
+          <div class="container">
             <div class="columns">
               <div class="column" >
                 <Projects/>
-                <Section copy={education}/>
-                <Section copy={experience}/>
-                <Section copy={about}/>
+                <Section title={education.title} body={education.body}/>
+                <Section title={experience.title} body={experience.body.crowdcompass.title} bullets={experience.body.crowdcompass.body}/>
+                <Section title={about.title} body={about.body}/>
               </div>
             </div>
           </div>

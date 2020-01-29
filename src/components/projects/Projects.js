@@ -5,9 +5,6 @@ import ProjectOutlet from './ProjectOutlets.js';
 
 export default function Projects() {
   return (
-    <Section
-      copy={projects}
-      outlet={<ProjectOutlet/>}
-    />
+    <div/>
   )
 }
