@@ -8,12 +8,8 @@ function PorjectItem({ sourceLink, hostLink, title, stack }) {
   return (
     <div class="card">
       <div class="card-content">
-        <p class="title has-text-white">
-          {title}
-        </p>
-        <p class="subtitle is-small">
-          {stack}
-        </p>
+        <p class="title has-text-white">{title}</p>
+        <p class="subtitle is-small">{stack}</p>
         <div class="buttons">
           <Button text="View Website" link={hostLink} icon={mdiWeb}/>
           <Button text="View Source" link={sourceLink} icon={mdiGithubCircle}/>
