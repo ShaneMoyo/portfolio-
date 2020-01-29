@@ -43,7 +43,7 @@ export const experience = {
     },
   }
 export const about = {
-    "title": "About Me",
+    "title": "Me",
     "body": `I'm a software engineer based in Portland,
     OR specializing in building (and occasionally designing)
     exceptional, high-quality websites and applications.`,
