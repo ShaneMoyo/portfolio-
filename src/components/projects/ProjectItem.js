@@ -4,7 +4,7 @@ import Icon from '@mdi/react';
 import Button from '../utils/Button'
 import { mdiReact, mdiDatabase, mdiWeb, mdiGithubCircle } from '@mdi/js';
 
-function PorjectItem({ sourceLink, hostLink, title, stack }) {
+function PorjectItem({item: { sourceLink, hostLink, title, stack }}) {
   return (
     <div class="card">
       <div class="card-content">

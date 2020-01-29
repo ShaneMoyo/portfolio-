@@ -12,20 +12,17 @@ export const education = {
 
 export const projects = {
     "title": "Projects",
-    "body": `Here you can take a look at some of my personal work.
-      Most of the applications I make are created with
-      MongoDB, React, Express and Node.`,
-    "button": {
-      "github": "Github",
-      "deployed": "Deployed Projects"
-    },
     "todo": {
-      "title": "Todo App",
-      "subtitle": "Full Stack Todo App created with mongDB, React and Express"
+      "title": "Full Stack Todo",
+      "sourceLink": 'https://shanestodolist.herokuapp.com/',
+      "hostLink": 'https://github.com/ShaneMoyo/todo-list-clien-react',
+      "stack": "MongoDB Express React Redux Node.js"
     },
     "healthihost": {
-      "title": "HealthiHost",
-      "subtitle": "Full Stack appointment booking App created with mongDB, React and Express"
+      "title": "Healthihost",
+      "sourceLink": "https://healthihost-qa.herokuapp.com/",
+      "hostLink": "https://github.com/ShaneMoyo/health-i-host",
+      "stack": "MongoDB Express React Redux Node.js"
     }
   }
 

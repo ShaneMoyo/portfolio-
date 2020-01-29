@@ -6,21 +6,12 @@ import Button from '../utils/Button'
 import { mdiReact, mdiDatabase, mdiWeb, mdiGithubCircle } from '@mdi/js';
 
 export default function Projects() {
+  const { todo, healthihost } = projects;
   return (
     <div>
-      <ProjectItem
-        stack={"MongoDB Express React Redux Node.js"}
-        hostLink={"https://shanestodolist.herokuapp.com/"}
-        sourceLink={'https://github.com/ShaneMoyo/todo-list-clien-react'}
-        title={'Full Stack Todo'}
-      />
+      <ProjectItem item={todo}/>
       <hr/>
-      <ProjectItem
-        stack={"MongoDB Express React Redux Node.js"}
-        hostLink={"https://healthihost-qa.herokuapp.com/"}
-        sourceLink={"https://github.com/ShaneMoyo/health-i-host"}
-        title={'Healthihost'}
-      />
+      <ProjectItem item={healthihost}/>
     </div>
   )
 }
