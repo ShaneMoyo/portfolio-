@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import {  mdiHumanHandsup, mdiAccountBadgeHorizontalOutline, mdiLightbulbOnOutline, mdiSchool } from '@mdi/js'
-import { experience, about, projects, education } from '../../locales/translations';
+import {  mdiHumanHandsup, mdiAccountBadgeHorizontalOutline, mdiLightbulbOnOutline, mdiSchool, mdiPhoneInTalk } from '@mdi/js'
+import { experience, about, projects, education, contact } from '../../locales/translations';
 import Button from '../utils/Button';
 import Hamburger from './hamburger';
 function Navbar() {
@@ -39,10 +39,18 @@ function Navbar() {
               </span>
               <span class="navbar-item">
                 <Button
-                  link="#about"
+                  link="#me"
                   icon={mdiHumanHandsup}
                   onClick={toggleNav}
                   text={about.title}
+                />
+              </span>
+              <span class="navbar-item">
+                <Button
+                  link="#contact"
+                  icon={mdiPhoneInTalk}
+                  onClick={toggleNav}
+                  text={contact.title}
                 />
               </span>
             </div>
