@@ -6,7 +6,7 @@ import Button from './utils/Button'
 import { mdiEmail, mdiInstagram, mdiLinkedinBox, mdiGithubCircle } from '@mdi/js';
 
 function section(props) {
-  const { outlet, title, body, bullets, body3 } = props
+  const { outlet, title, body, bullets, body3, button } = props
   const iconMap = {
     "Email": mdiEmail,
     "Instagram": mdiInstagram,
@@ -42,7 +42,13 @@ function section(props) {
           </div>
           <h1 class="subtitle">{body3}</h1>
           {outlet}
+          {button ? <Button
+            link={button.link}
+            icon={iconMap[button.icon]}
+            text={button.text}
+          /> : null}
         </div>
+
       </ScrollAnimation>
     </div>
 

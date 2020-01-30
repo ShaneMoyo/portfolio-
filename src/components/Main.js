@@ -20,7 +20,7 @@ export default function Main() {
                 <Section title={experience.title} body={experience.body.crowdcompass.title} bullets={experience.body.crowdcompass.body}/>
                 <Section title={education.title} body={education.body.title} bullets={education.body.body}/>
                 <Section title={projects.title}  outlet={<Projects/>}/>
-                <Section title={contact.title} bullets={contact.body}/>
+                <Section title={contact.title} body={contact.body} button={contact.button}/>
               </div>
             </div>
           </div>
