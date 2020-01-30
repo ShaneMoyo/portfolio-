@@ -37,8 +37,7 @@ body {
   background-size: cover; }
 
 .box.black {
-  background-color: #000;
-  border: 2px solid #fff; }
+  background-color: #000; }
 
 .title {
   color: #fff !important; }
