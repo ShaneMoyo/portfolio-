@@ -3,7 +3,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Section from './Section';
 import Projects from './projects/Projects';
 import Navbar from './navbar/navbar'
-import { experience, education, about, projects } from '../locales/translations';
+import { experience, education, about, projects, contact } from '../locales/translations';
 
 export default function Main() {
   return(
@@ -20,6 +20,7 @@ export default function Main() {
                 <Section title={experience.title} body={experience.body.crowdcompass.title} bullets={experience.body.crowdcompass.body}/>
                 <Section title={education.title} body={education.body.title} bullets={education.body.body}/>
                 <Section title={projects.title}  outlet={<Projects/>}/>
+                <Section title={contact.title} bullets={contact.body}/>
               </div>
             </div>
           </div>

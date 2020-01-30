@@ -1,9 +1,32 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Icon from '@mdi/react';
+import Button from './utils/Button'
+
+import { mdiEmail, mdiInstagram, mdiLinkedinBox, mdiGithubCircle } from '@mdi/js';
 
 function section(props) {
   const { outlet, title, body, bullets, body3 } = props
-  const listItems = bullets ? bullets.map(bullet => <li class="animated fadeIn">{bullet}</li>) : null;
+  const iconMap = {
+    "Email": mdiEmail,
+    "Instagram": mdiInstagram,
+    "Github": mdiGithubCircle,
+    "LinkedIn": mdiLinkedinBox
+
+  };
+  const listItems = bullets ? bullets.map(bullet => {
+    if (typeof bullet === 'object') {
+      return(
+        <li class="animated fadeIn">
+          <Button
+            link={bullet.link}
+            icon={iconMap[bullet.network]}
+            text={bullet.network}
+          />
+        </li>);
+    }
+    return <li class="animated fadeIn">{bullet}</li>
+  }) : null;
   return (
     <div class="container" id={title.toLowerCase()}>
       <ScrollAnimation

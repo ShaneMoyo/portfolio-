@@ -46,6 +46,16 @@ export const about = {
     exceptional, high-quality websites and applications.`,
   }
 
+  export const contact = {
+      "title": "Contact",
+      "body": [
+        { network: "LinkedIn", link: "https://www.linkedin.com/in/shanemoyo/" },
+        { network: "Instagram", link: "https://www.instagram.com/shanemoyo/" },
+        { network: "Github", link: "https://github.com/ShaneMoyo" },
+        { network: "Email", link: "mailto:smoyo@pdx.edu" }
+      ]
+    }
+
   export const landing = {
       "subtitle1": "Hey there, I'm",
       "name": "Shane Moyo",
