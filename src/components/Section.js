@@ -42,11 +42,15 @@ function section(props) {
           </div>
           <h1 class="subtitle">{body3}</h1>
           {outlet}
-          {button ? <Button
+          {button ? <div class="card-content">
+          <div class="subtitle">
+            {button.body}
+          </div>
+          <Button
             link={button.link}
             icon={iconMap[button.icon]}
             text={button.text}
-          /> : null}
+          /></div> : null}
         </div>
 
       </ScrollAnimation>

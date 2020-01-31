@@ -51,7 +51,13 @@ export const about = {
       "body": `Although I'm not currently looking for freelance opportunities,
        my inbox is always open. Whether for a potential project or just to say hi,
       I'll try my best to answer your email!`,
-      "button": { text: "Get in touch!", link: "mailto:smoyo@pdx.edu", icon: "Email" },
+      "button": {
+        "text": "Get in touch!",
+        "link": "mailto:smoyo@pdx.edu",
+        "icon": "Email",
+        "body": `Although I'm not currently looking for freelance opportunities,
+         my inbox is always open. Whether for a potential project or just to say hi,`
+      },
       "body1": [
         { network: "LinkedIn", link: "https://www.linkedin.com/in/shanemoyo/" },
         { network: "Instagram", link: "https://www.instagram.com/shanemoyo/" },
