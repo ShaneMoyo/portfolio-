@@ -3,9 +3,7 @@
   color: white !important; }
 
 html {
-  scroll-behavior: smooth;
-  background: linear-gradient(white, black);
-  background-color: transparent !important; }
+  scroll-behavior: smooth; }
 
 body {
   background: linear-gradient(white, black) !important; }
@@ -57,6 +55,9 @@ body {
   top: 0;
   background: linear-gradient(black, black, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)) !important;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4) !important; }
+
+div#preload {
+  display: none; }
 
 /*! bulma.io v0.8.0 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {

@@ -29,7 +29,9 @@ function App() {
         <br/><br/><br/><br/><br/><br/>
         </div>
       </footer>
-
+      <div id="preload">
+        <img src="/img/water.jpg" />
+      </div>
   </div>
   );
 }
