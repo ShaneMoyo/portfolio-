@@ -10,7 +10,7 @@ function section(props) {
   const iconMap = {
     "Email": mdiEmail,
     "Instagram": mdiInstagram,
-    "Github": mdiGithubCircle,
+      "Github": mdiGithubCircle,
     "LinkedIn": mdiLinkedinBox
 
   };
