@@ -14,14 +14,14 @@ export const projects = {
     "title": "Projects",
     "todo": {
       "title": "Full Stack Todo",
-      "sourceLink": 'https://shanestodolist.herokuapp.com/',
-      "hostLink": 'https://github.com/ShaneMoyo/todo-list-clien-react',
+      "sourceLink": 'https://github.com/ShaneMoyo/todo-list-clien-react',
+      "hostLink": 'https://shanestodolist.herokuapp.com/',
       "stack": "MongoDB Express React Redux Node.js"
     },
     "healthihost": {
       "title": "Healthihost",
-      "sourceLink": "https://healthihost-qa.herokuapp.com/",
-      "hostLink": "https://github.com/ShaneMoyo/health-i-host",
+      "sourceLink": "https://github.com/ShaneMoyo/health-i-host",
+      "hostLink": "https://healthihost-qa.herokuapp.com/",
       "stack": "MongoDB Express React Redux Node.js"
     }
   }
